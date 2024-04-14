@@ -3,7 +3,6 @@ import './css/App.css';
 import InputColor from './components/InputColor'
 import PreviewColor from './components/PreviewColor'
 
-
 function App() {
    const [color, setColor] = useState("")
 

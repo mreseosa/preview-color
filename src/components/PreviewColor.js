@@ -2,7 +2,7 @@ const PreviewColor = ({ color }) => {
    return (
       <div 
          className="view"
-         style={{backgroundColor: color}}
+         style={{backgroundColor: color.toLowerCase()}}
          >
          <div className="txt">{!color ? 'Empty Value' : color}</div>
       </div>
