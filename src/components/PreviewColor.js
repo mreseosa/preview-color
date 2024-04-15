@@ -1,10 +1,14 @@
-const PreviewColor = ({ color }) => {
+const PreviewColor = ({ color, hexValue, isDarkText }) => {
    return (
       <div 
          className="view"
-         style={{backgroundColor: color.toLowerCase()}}
+         style={{
+            backgroundColor: color.toLowerCase(),
+            color: isDarkText ? '#000' : '#fff'
+         }}
          >
          <div className="txt">{!color ? 'Empty Value' : color}</div>
+         <div className="txt hex">{hexValue ? hexValue : color}</div>
       </div>
    )
 }

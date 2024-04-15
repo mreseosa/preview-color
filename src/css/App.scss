@@ -22,6 +22,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       width: 300px;
       height: 250px;
       border-radius: .6em;
@@ -30,9 +31,18 @@ body {
    }
 
    .txt {
-      color: #000000e0;
-      font-size: 1rem;
+      // color: #000000e0;
+      font-size: 1.15rem;
       font-weight: bold;
+   }
+
+   .hex {
+      font-size: 1.05rem;
+   }
+
+   label {
+      position: absolute;
+      left: -99999999px;
    }
 
    input {

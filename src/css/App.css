@@ -20,6 +20,7 @@ body .view {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 300px;
   height: 250px;
   border-radius: 0.6em;
@@ -27,9 +28,15 @@ body .view {
   transition: all 0.25s ease-in;
 }
 body .txt {
-  color: rgba(0, 0, 0, 0.8784313725);
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: bold;
+}
+body .hex {
+  font-size: 1.05rem;
+}
+body label {
+  position: absolute;
+  left: -99999999px;
 }
 body input {
   width: 100%;
